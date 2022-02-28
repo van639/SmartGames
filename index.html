@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu-hamburguer.css">
+    <script src="js/banner-rotativo.js" defer></script>
+    <script src="js/menu-burguer.js" defer></script>
+    <script src="js/ancora.js" defer></script>
+    <script src="script/jquery.js" defer></script>
+    <script src="js/consumoAPI/main.js" defer type="module"></script>
+    <title>Smart Games Ltda</title>
+</head>
+<body>
+    <div id="containerPrincial">
+        <!-- CABEÇALHO -->
+        <header>
+            <!-- MENU -->
+            <nav>
+                <div id="logo"></div>
+                <ul>
+                    <li class="tipografiaDeLetra">
+                        <a href="#banner">Início</a>
+                    </li>
+                    <li class="tipografiaDeLetra">
+                        <a href="#containerLojas">Loja</a>
+                    </li>
+                    <li class="tipografiaDeLetra">
+                        <a href="#ancoraPromocoes">Promoções</a>
+                    </li>
+                    <li class="tipografiaDeLetra">
+                        <a href="#containerBoletoBancario">Sobre</a>
+                    </li>            
+                    <li class="tipografiaDeLetra">
+                        <a href="#containerDestaques">Destaque</a>
+                    </li>
+                </ul>
+                <div id="redesSociais">
+                    <img src="./img/icons8-facebook-50.png"/>
+                    <img src="./img/icons8-instagram-50.png"/>
+                    <img src="./img/icons8-logo-discord-50.png"/>
+                </div>
+            </nav>
+            <!-- FIM MENU -->
+            <h1 class="gradienteTitulo">Smart Games Ltda</h1>
+            <!-- BANNER -->
+            <div id="banner">
+                <img class="selected" src="img/bannre.jpg" alt="Image1">
+                <img src="img/banner.jpg" alt="Image2">
+                <img src="img/banner-04.jpg" alt="Image3">
+                <img src="img/banner-03.jpg" alt="Image4">
+            </div>
+            <!-- FIM DO BANNER -->
+        </header>
+        <!-- FIM CABEÇALHO -->
+        <div id="linha"></div>
+        <!-- MENU HAMBURGUER -->
+        <section>
+            <div class="menuBurguer" id="menuBurguer" onclick="fun()">
+                <div class="block1" id="block1"></div>
+                <div class="block2" id="block2"></div>
+                <div class="block3" id="block3"></div>
+            </div>
+            <div class="contentMenu" id="contentMenu">
+            <ul  id="menuAnimation">
+                <li class="tipografiaDeLetra">PS4</li>
+                <li class="tipografiaDeLetra">XBOX</li>
+                <li class="tipografiaDeLetra">XBOX ONE</li>
+                <li class="tipografiaDeLetra">SWITCH</li>            
+                <li class="tipografiaDeLetra">PC</li>
+                <li class="tipografiaDeLetra">WiiU</li>
+            </ul>
+            </div>
+        </section>
+        <!-- FIM MENU HAMBURGUER -->
+        <!-- AREA DE JOGOS -->
+        <h2>Jogos</h2>
+        <div id="containerJogos">
+<!--             
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>teste</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div>
+            <div class="cardJogo">
+                <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                <p>Pão no senteio, salada, tomate, bife, molho barbecue</p>
+                <div class="btnSaibaMais">SAIBA MAIS</div>
+                <div class="preco">R$23,00</div>
+            </div> -->
+        </div>
+        <!-- FIM DA AREA DE JOGOS -->
+        <!-- DESTAQUES -->
+        <span id="designDEstaque"><h2>Destaques</h2></span>
+        
+        <div id="containerDestaques">
+            <img src="img/destaque.jfif">
+            <img src="img/destaque01.jfif">
+            <img src="img/destaque02.jfif">
+            <img src="img/Battlefield_6-1170x720.jpg">
+        </div>
+        <!-- FIM DOS DESTAQUES -->
+        <div id="containerLojasPromocoes">
+            <div id="designpromocoes">
+                <!-- LOJAS -->
+                <div id="containerLojas">
+                    <h2>Lojas</h2>
+                    <p class="tipografiaDeLetra" id="designLojas">Unidades no Shopping Tamboré - Shopping União - Shopping Iguatemi </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7820582231434!2d-46.83653928518959!3d-23.504358284711248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf017b8c1a5da9%3A0x22a277028d33acc!2sShopping%20Tambor%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1645928249391!5m2!1spt-BR!2sbr" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- FIM LOJAS -->
+            </div>
+            <!-- CONTAINER PROMOÇÕES -->
+            <div id="containerPromocoes">
+                <h2>Promoções</h2>
+                <div class="cardJogo">
+                    <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                    <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                    <p>teste</p>
+                    <div class="btnSaibaMais">SAIBA MAIS</div>
+                    <div class="preco">R$23,00</div>
+                </div>
+                <div class="cardJogo">
+                    <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                    <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                    <p>teste</p>
+                    <div class="btnSaibaMais">SAIBA MAIS</div>
+                    <div class="preco">R$23,00</div>
+                </div>
+                <div class="cardJogo">
+                    <img src="img/Battlefield_6-1170x720.jpg" alt=""/>
+                    <h3 class="tipografiaDeLetra" >Battlefiled 6</h3>
+                    <p>teste</p>
+                    <div class="btnSaibaMais">SAIBA MAIS</div>
+                    <div class="preco">R$23,00</div>
+                </div>
+            </div>
+            <div id="ancoraPromocoes"></div>
+            <!-- CONTAINER PROMOÇÕES -->
+            <footer>
+                <h2>Sobre</h2>
+                <p class="tipografiaDeLetra">Politica de reembolso</p>
+                <p class="tipografiaDeLetra">Politica de privacidade</p>
+                <p class="tipografiaDeLetra">Regras de condulta </p>
+                <h4 class="tipogradiaDeLetra">Formas de Pagamentos</h4>
+                <div id="containerFormasDePagamento">
+                    <p  class="tipografiaDeLetra">Cartão de crédito</p>
+                    <img src="./img/mastercard.png">
+                    <img src="./img/visa.png">
+                    <div id="containerTransferenciaBancaria">
+                        <p  class="tipografiaDeLetra">Tranferência Bancaria</p>
+                        <img src="./img/itau.png">
+                        <img src="./img/banco.png">
+                    </div>
+                    <div id="containerBoletoBancario">
+                        <p  class="tipografiaDeLetra">Boleto Bancario</p>
+                        <img src="./img/boleto.png">
+                    </div>
+                </div>
+                
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
